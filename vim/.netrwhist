@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/home/fredriki/code/man/platooning_research/docker'
+let g:netrw_dirhist_9='/home/fredriki/code/man/platooning_research/deploy'
+let g:netrw_dirhist_8='/home/fredriki/code/man/platooning_research/docker'
+let g:netrw_dirhist_7='/home/fredriki/code/man/platooning_research/man-platooning-commsignia'
+let g:netrw_dirhist_6='/home/fredriki/code/man/platooning_research/.git'
+let g:netrw_dirhist_5='/home/fredriki/code/man/platooning_research/.git/modules'
+let g:netrw_dirhist_4='/home/fredriki/code/hacks/gdb-commsignia-git/build'
+let g:netrw_dirhist_3='/home/fredriki/.config/gnome-session'
+let g:netrw_dirhist_2='/home/fredriki/code/hacks/gdb-7.11.1-armhf/mnt'
+let g:netrw_dirhist_1='/home/fredriki/downloads/commsignia-x-compile/glibc-2.24'

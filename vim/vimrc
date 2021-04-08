@@ -1,0 +1,17 @@
+execute pathogen#infect()
+
+autocmd vimenter * ++nested colorscheme gruvbox
+
+autocmd BufNewFile,BufRead Dockerfile* set filetype=dockerfile
+
+set background=dark
+
+set nu
+set mouse-=a
+
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+syntax on
+
