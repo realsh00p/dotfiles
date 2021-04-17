@@ -1,0 +1,3 @@
+setup fonts:
+ - inconsolata (terminal)
+ - iosevka/font awesome (polybar)
