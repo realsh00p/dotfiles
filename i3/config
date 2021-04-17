@@ -25,6 +25,7 @@ floating_modifier $mod
 
 # start a terminal
 bindsym --release $mod+Return exec i3-sensible-terminal
+bindsym --release $mod+Control+t exec i3-sensible-terminal && i3-msg "[id=$(xdotool getactivewindow)] floating enable"
 bindsym Shift+Control+o split v; exec i3-sensible-terminal
 bindsym Shift+Control+e split h; exec i3-sensible-terminal
 
@@ -129,13 +130,11 @@ bindsym $mod+Shift+e exit
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
-  # These bindings trigger as soon as you enter the resize mode
-  bindsym $mod+Shift+h exec --no-startup-id i3resize left
-  bindsym $mod+Shift+j exec --no-startup-id i3resize down
-  bindsym $mod+Shift+k exec --no-startup-id i3resize up
-  bindsym $mod+Shift+l exec --no-startup-id i3resize right
+  bindsym h exec --no-startup-id i3resize left
+  bindsym j exec --no-startup-id i3resize down
+  bindsym k exec --no-startup-id i3resize up
+  bindsym l exec --no-startup-id i3resize right
 	  
-  # same bindings, but for the arrow keys
   bindsym Left exec --no-startup-id i3resize left
   bindsym Down exec --no-startup-id i3resize down
   bindsym Up exec --no-startup-id i3resize up
@@ -152,6 +151,12 @@ bindsym $mod+$sup+Left exec --no-startup-id i3resize left
 bindsym $mod+$sup+Down exec --no-startup-id i3resize down
 bindsym $mod+$sup+Up exec --no-startup-id i3resize up
 bindsym $mod+$sup+Right exec --no-startup-id i3resize right
+
+bindsym $mod+$sup+h exec --no-startup-id i3resize left
+bindsym $mod+$sup+j exec --no-startup-id i3resize down
+bindsym $mod+$sup+k exec --no-startup-id i3resize up
+bindsym $mod+$sup+l exec --no-startup-id i3resize right
+
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
