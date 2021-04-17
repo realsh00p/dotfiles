@@ -1,6 +1,6 @@
 [dmenu]
 fn = Iosevka 14
-dmenu_command = dmenu_run
+dmenu_command = dmenu
 
 #fn = -*-terminus-medium-*-*-*-16-*-*-*-*-*-*-*
 # dmenu_command = /usr/bin/dmenu
