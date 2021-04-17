@@ -1,5 +1,6 @@
 #!/bin/sh
 PWD="$(pwd)"
+ln -s "$PWD/fish" "$HOME/.config/fish"
 ln -s "$PWD/i3" "$HOME/.config/i3"
 ln -s "$PWD/i3-polybar" "$HOME/.config/polybar"
 ln -s "$PWD/i3-rofi" "$HOME/.config/rofi"
