@@ -40,6 +40,7 @@ function safeln () {
     echo -e "INFO: successfully linked $CONFIG_PATH to target $DOTFILES_PATH\n"
 }
 
+safeln "vim" "../.vim"
 safeln 'fish' 'fish'
 safeln 'i3' 'i3'
 safeln 'i3-polybar'  'polybar'
@@ -49,3 +50,5 @@ safeln 'i3-networkmanager-dmenu-config/config.ini' 'networkmanager-dmenu/config.
 safeln 'xfce4/terminal/colorschemes/gruvbox.theme' 'xfce4/terminal/colorschemes/gruvbox.theme'
 safeln 'terminator/config' 'terminator/config'
 
+apt install -y fonts-font-awesome
+apt install -y fonts-inconsolata
