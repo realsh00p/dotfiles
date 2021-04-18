@@ -47,4 +47,5 @@ safeln 'i3-rofi' 'rofi'
 safeln 'i3-networkmanager-dmenu' 'networkmanager-dmenu'
 safeln 'i3-networkmanager-dmenu-config/config.ini' 'networkmanager-dmenu/config.ini'
 safeln 'xfce4/terminal/colorschemes/gruvbox.theme' 'xfce4/terminal/colorschemes/gruvbox.theme'
+safeln 'terminator/config' 'terminator/config'
 
