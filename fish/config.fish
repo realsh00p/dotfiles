@@ -1,5 +1,7 @@
-set fish_greeting
-#theme_gruvbox dark hard
+if status is-interactive
+   set fish_greeting
+   theme_gruvbox dark hard
+end
 
 if test -d ~/bin
    set -gx PATH ~/bin $PATH 
