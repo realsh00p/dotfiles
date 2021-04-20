@@ -8,3 +8,6 @@
 	path = i3-networkmanager-dmenu
 	url = git@github.com:firecat53/networkmanager-dmenu.git
 	ignore = dirty	
+[submodule "git/git-filter-repo"]
+	path = git/git-filter-repo
+	url = https://github.com/newren/git-filter-repo.git
