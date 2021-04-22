@@ -24,10 +24,10 @@ font pango:DejaVu Sans Mono 14
 floating_modifier $mod
 
 # start a terminal
-bindsym --release $mod+Return exec i3-sensible-terminal
+bindsym --release $mod+Return exec i3-sensible-terminal -e /usr/bin/fish
 bindsym --release $mod+Control+t exec i3-sensible-terminal && i3-msg "[id=$(xdotool getactivewindow)] floating enable"
-bindsym Shift+Control+o split v; exec i3-sensible-terminal
-bindsym Shift+Control+e split h; exec i3-sensible-terminal
+bindsym Shift+Control+o split v; exec i3-sensible-terminal -e /usr/bin/fish
+bindsym Shift+Control+e split h; exec i3-sensible-terminal -e /usr/bin/fish
 
 
 # kill focused window
