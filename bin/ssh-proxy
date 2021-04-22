@@ -1,2 +1,0 @@
-#!/usr/bin/env bash
-ssh $@ -o "ProxyCommand corkscrew 192.168.0.100 8080 %h %p"
