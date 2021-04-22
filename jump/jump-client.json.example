@@ -1,0 +1,9 @@
+{
+    "ssl_server": "1.2.3.4:443",
+    "ssl_cert": "$HOME/.dotfiles/jump/certs/client.pem",
+    "ssl_ca": "$HOME/.dotfiles/jump/certs/ca.pem",
+    "ssl_cn": "whatever",
+    "ssh_jump_host": "127.0.0.1",
+    "ssh_jump_port": "1234",
+    "ssh_jump_user": "whomever"
+}

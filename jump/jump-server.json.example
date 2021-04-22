@@ -1,0 +1,6 @@
+{
+    "ssl_listen": "443",
+    "ssl_cert": "$HOME/.dotfiles/socat-jump/certs/server.pem",
+    "ssl_ca": "$HOME/.dotfiles/socat-jump/certs/ca.pem",
+    "ssh_target": "127.0.0.1:22",
+}
