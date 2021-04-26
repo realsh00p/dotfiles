@@ -1,0 +1,9 @@
+# eclipse
+.settings/
+.cproject
+.project
+
+# vim
+*.swp
+.netrwhist
+
