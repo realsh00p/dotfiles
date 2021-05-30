@@ -163,6 +163,7 @@ bindsym $mod+$sup+l exec --no-startup-id i3resize right
 
 bindsym $mod+d exec "dmenu_run"
 bindsym $mod+n exec "~/.config/networkmanager-dmenu/networkmanager_dmenu"
+bindsym --release Print exec "flameshot gui"
 
 # Gruvbox theme
 # class                 border  bground text    indicator child_border
