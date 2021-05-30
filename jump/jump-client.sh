@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 SSH_TARGET_SERVER="$1"
-CONFIG_FILE="$HOME/.dotfiles/jump/jump-client.json"
+CONFIG_FILE="$HOME/.dotfiles/jump/config/jump-client.json"
 
 . "$HOME/.dotfiles/jump/jump-functions.sh"
 

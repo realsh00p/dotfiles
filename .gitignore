@@ -1,4 +1,4 @@
 *.swp
 .netrwhist
-jump/*.json
-jump/certs/*
+jump/certs/
+jump/config/
