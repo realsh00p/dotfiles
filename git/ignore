@@ -7,3 +7,5 @@
 *.swp
 .netrwhist
 
+# bazel
+bazel-

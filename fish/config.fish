@@ -32,8 +32,8 @@ if status is-interactive
    theme_gruvbox dark hard
 end
 
-if test -d ~/bin
-   set -gx PATH ~/bin $PATH 
+if test -d ~/.cargo/bin
+    set -gx PATH $HOME/.cargo/bin $PATH
 end
 
 if test -d ~/.local/bin
@@ -43,3 +43,4 @@ end
 if test -d ~/.dotfiles/bin
   set -gx PATH ~/.dotfiles/bin $PATH
 end
+

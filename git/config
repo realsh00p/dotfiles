@@ -1,0 +1,9 @@
+[user]
+	name = realsh00p
+	email = @
+
+[core]
+	excludesfile = /home/fredriki/.config/git/ignore
+	editor = vim
+[init]
+	defaultBranch = master

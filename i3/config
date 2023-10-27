@@ -15,71 +15,70 @@ exec_always --no-startup-id "~/.fehbg &"
 exec_always --no-startup-id "compton -b"
 exec_always --no-startup-id "~/.config/polybar/launch.sh"
 
-set $mod Mod1
 set $sup Mod4
 
 font pango:DejaVu Sans Mono 14
 
-# Use Mouse+$mod to drag floating windows to their wanted position
-floating_modifier $mod
+# Use Mouse+$sup to drag floating windows to their wanted position
+floating_modifier $sup
 
 # start a terminal
-bindsym --release $mod+Return exec i3-sensible-terminal -e /usr/bin/fish
-bindsym --release $mod+Control+t exec i3-sensible-terminal && i3-msg "[id=$(xdotool getactivewindow)] floating enable"
+bindsym --release $sup+Return exec i3-sensible-terminal -e /usr/bin/fish
+bindsym --release $sup+Control+t exec i3-sensible-terminal && i3-msg "[id=$(xdotool getactivewindow)] floating enable"
 bindsym Shift+Control+o split v; exec i3-sensible-terminal -e /usr/bin/fish
 bindsym Shift+Control+e split h; exec i3-sensible-terminal -e /usr/bin/fish
 
 
 # kill focused window
-bindsym $mod+Shift+q kill
+bindsym $sup+Shift+q kill
 
 # change focus
-bindsym $mod+h focus left
-bindsym $mod+j focus down
-bindsym $mod+k focus up
-bindsym $mod+l focus right
+bindsym $sup+h focus left
+bindsym $sup+j focus down
+bindsym $sup+k focus up
+bindsym $sup+l focus right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
+bindsym $sup+Left focus left
+bindsym $sup+Down focus down
+bindsym $sup+Up focus up
+bindsym $sup+Right focus right
 
 # move focused window
-bindsym $mod+Shift+h move left
-bindsym $mod+Shift+j move down
-bindsym $mod+Shift+k move up
-bindsym $mod+Shift+l move right
+bindsym $sup+Shift+h move left
+bindsym $sup+Shift+j move down
+bindsym $sup+Shift+k move up
+bindsym $sup+Shift+l move right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
+bindsym $sup+Shift+Left move left
+bindsym $sup+Shift+Down move down
+bindsym $sup+Shift+Up move up
+bindsym $sup+Shift+Right move right
 
 # split
-bindsym $mod+period split h
-bindsym $mod+minus split v
+bindsym $sup+period split h
+bindsym $sup+minus split v
 
 # enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
+bindsym $sup+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+bindsym $sup+s layout stacking
+bindsym $sup+w layout tabbed
+bindsym $sup+e layout toggle split
 
 # toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+bindsym $sup+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+bindsym $sup+space focus mode_toggle
 
 # focus the parent container
-bindsym $mod+a focus parent
+bindsym $sup+a focus parent
 
 # focus the child container
-#bindsym $mod+d focus child
+#bindsym $sup+d focus child
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -95,38 +94,38 @@ set $ws9 "9"
 set $ws10 "10"
 
 # switch to workspace
-bindsym $mod+1 workspace $ws1
-bindsym $mod+2 workspace $ws2
-bindsym $mod+3 workspace $ws3
-bindsym $mod+4 workspace $ws4
-bindsym $mod+5 workspace $ws5
-bindsym $mod+6 workspace $ws6
-bindsym $mod+7 workspace $ws7
-bindsym $mod+8 workspace $ws8
-bindsym $mod+9 workspace $ws9
-bindsym $mod+0 workspace $ws10
+bindsym $sup+1 workspace $ws1
+bindsym $sup+2 workspace $ws2
+bindsym $sup+3 workspace $ws3
+bindsym $sup+4 workspace $ws4
+bindsym $sup+5 workspace $ws5
+bindsym $sup+6 workspace $ws6
+bindsym $sup+7 workspace $ws7
+bindsym $sup+8 workspace $ws8
+bindsym $sup+9 workspace $ws9
+bindsym $sup+0 workspace $ws10
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace $ws1
-bindsym $mod+Shift+2 move container to workspace $ws2
-bindsym $mod+Shift+3 move container to workspace $ws3
-bindsym $mod+Shift+4 move container to workspace $ws4
-bindsym $mod+Shift+5 move container to workspace $ws5
-bindsym $mod+Shift+6 move container to workspace $ws6
-bindsym $mod+Shift+7 move container to workspace $ws7
-bindsym $mod+Shift+8 move container to workspace $ws8
-bindsym $mod+Shift+9 move container to workspace $ws9
-bindsym $mod+Shift+0 move container to workspace $ws10
+bindsym $sup+Shift+1 move container to workspace $ws1
+bindsym $sup+Shift+2 move container to workspace $ws2
+bindsym $sup+Shift+3 move container to workspace $ws3
+bindsym $sup+Shift+4 move container to workspace $ws4
+bindsym $sup+Shift+5 move container to workspace $ws5
+bindsym $sup+Shift+6 move container to workspace $ws6
+bindsym $sup+Shift+7 move container to workspace $ws7
+bindsym $sup+Shift+8 move container to workspace $ws8
+bindsym $sup+Shift+9 move container to workspace $ws9
+bindsym $sup+Shift+0 move container to workspace $ws10
 
-bindsym $mod+Control+Right workspace next
-bindsym $mod+Control+Left workspace prev
+bindsym $sup+Control+Right workspace next
+bindsym $sup+Control+Left workspace prev
 
 # reload the configuration file
-bindsym $mod+Shift+c reload
+bindsym $sup+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
+bindsym $sup+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exit
+bindsym $sup+Shift+e exit
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -140,30 +139,22 @@ mode "resize" {
   bindsym Up exec --no-startup-id i3resize up
   bindsym Right exec --no-startup-id i3resize right  
 
-  # back to normal: Enter or Escape or $mod+r
+  # back to normal: Enter or Escape or $sup+r
   bindsym Return mode "default"
   bindsym Escape mode "default"
-  bindsym $mod+r mode "default"
+  bindsym $sup+r mode "default"
 }
+bindsym $sup+r mode "resize"
 
-bindsym $mod+r mode "resize"
-bindsym $mod+$sup+Left exec --no-startup-id i3resize left
-bindsym $mod+$sup+Down exec --no-startup-id i3resize down
-bindsym $mod+$sup+Up exec --no-startup-id i3resize up
-bindsym $mod+$sup+Right exec --no-startup-id i3resize right
-
-bindsym $mod+$sup+h exec --no-startup-id i3resize left
-bindsym $mod+$sup+j exec --no-startup-id i3resize down
-bindsym $mod+$sup+k exec --no-startup-id i3resize up
-bindsym $mod+$sup+l exec --no-startup-id i3resize right
 
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 
-bindsym $mod+d exec "dmenu_run"
-bindsym $mod+n exec "~/.config/networkmanager-dmenu/networkmanager_dmenu"
-bindsym --release Print exec "flameshot gui"
+bindsym $sup+d exec "source /etc/profile; rofi -show run"
+bindsym $sup+Shift+d exec "rofi -show drun"
+bindsym $sup+n exec "~/.config/networkmanager-dmenu/networkmanager_dmenu"
+bindsym --release $sup+Print exec --no-startup-id "flameshot gui"
 
 # Gruvbox theme
 # class                 border  bground text    indicator child_border
@@ -191,6 +182,7 @@ bindsym XF86AudioNext exec --no-startup-id playerctl next
 bindsym XF86AudioPrev exec --no-startup-id playerctl previous
 
 # Application shortcuts
-bindsym $mod+odiaeresis exec www-browser
+bindsym $sup+odiaeresis exec www-browser
 
 for_window [class="Pavucontrol"] floating enable
+for_window [class="Blueman-manager"] floating enable 

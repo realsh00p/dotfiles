@@ -11,3 +11,6 @@
 [submodule "git/git-filter-repo"]
 	path = git/git-filter-repo
 	url = https://github.com/newren/git-filter-repo.git
+[submodule "AstroNvim"]
+	path = AstroNvim
+	url = https://github.com/AstroNvim/AstroNvim
