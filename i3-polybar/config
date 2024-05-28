@@ -21,7 +21,7 @@ foreground = ${colors.foreground}
 line-size  = 2
 line-color = ${colors.foreground}
 font-0 = Iosevka:size=14;2
-font-1 = Font Awesome 5 Free Solid:size=14;2
+font-1 = FontAwesome:size=14;2
 modules-left   = i3 time date
 modules-right  = wired-network wireless-network battery temperature pulseaudio
 cursor-click  = pointer
@@ -79,7 +79,7 @@ label-disconnected  = ""
 
 [module/wireless-network]
 type = internal/network
-interface = wlp2s0
+interface = wlp0s20f3
 label-connected = %ifname%: %essid% %local_ip%
 label-disconnected = ""
 
