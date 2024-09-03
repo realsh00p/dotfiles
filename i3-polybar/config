@@ -22,7 +22,7 @@ foreground = ${colors.foreground}
 line-size  = 2
 line-color = ${colors.foreground}
 font-0 = Iosevka:size=14;2
-font-1 = Font Awesome 5 Free Solid:size=14;2
+font-1 = FontAwesome:size=14;2
 modules-left   = i3 time date
 modules-right  = wired-network wireless-network battery temperature pulseaudio
 cursor-click  = pointer

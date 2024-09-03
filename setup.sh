@@ -53,3 +53,6 @@ safeln "AstroNvim" "nvim"
 
 apt install -y fonts-font-awesome
 apt install -y fonts-inconsolata
+apt install -y polybar rofi
+apt install -y compton feh terminator
+apt install -y gir1.2-nm-1.0 libcairo2-dev libxt-dev libgirepository1.0-dev
