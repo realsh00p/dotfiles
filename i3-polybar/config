@@ -23,10 +23,10 @@ background = ${colors.background}
 foreground = ${colors.foreground}
 line-size  = 2
 line-color = ${colors.foreground}
-font-0 = Iosevka NF:size=12;2
-font-1 = Font Awesome 5 Free Solid:size=12;2
+font-0 = Iosevka Nerd Font:size=12;2
+font-1 = FontAwesome:size=12;2
 modules-left   = i3
-modules-right  = filesystem memory wirednetwork pulseaudio temperature date time
+modules-right  = filesystem memory wirednetwork wirelessnetwork pulseaudio temperature battery date time
 cursor-click  = pointer
 cursor-scroll = ns-resize
 tray-position = right
@@ -67,50 +67,87 @@ label-padding    = 2
 [module/date]
 type             = internal/date
 interval         = 1.0
-date             = %A, %d %B
+date             = %a, %d %b
 label            =  %date%
 label-foreground = ${colors.foreground}
-label-padding    = 2
+label-padding    = 1
+
+[module/battery]
+type = internal/battery
+battery = BAT0
+adapter = AC
+
+label-charging             = %percentage%%
+format-charging            =   <label-charging>
+;format-charging-background = ${colors.teal}
+;format-charging-foreground = ${colors.foreground}
+format-charging-padding    = 1
+
+label-discharging             = %percentage%%
+format-discharging            =   <label-discharging>
+;format-discharging-background = ${colors.orange}
+;format-discharging-foreground = ${colors.foreground}
+format-discharging-padding    = 1
+
+label-low             = %percentage%%
+format-low            =   <label-low>
+;format-low-background = ${colors.red}
+;format-low-foreground = ${colors.foreground}
+format-low-padding    = 1
 
 [module/filesystem]
 type          = internal/fs
 fixed-values  = true
 mount-0       = /
-label-mounted = "HDD | %used% | %free% | "
+label-mounted = "HDD %used% "
 
 [module/memory]
-type  = internal/memory
-label = "RAM | %gb_used% | %gb_free% | "
+type            = internal/memory
+label           = " RAM %gb_used% "
+warn-percentage = 90
+interval        = 3
 
 [module/wirednetwork]
 type                = internal/network
-interface           = eth1
+interface           = enp129s0
+interface-type      = wired
 label-connected     = %ifname%: %local_ip%
 label-disconnected  = ""
-format-padding      = 2
+format-padding      = 1
+
+[module/wirelessnetwork]
+type                = internal/network
+interface           = wlp130s0f0
+interface-type      = wireless
+label-connected     = %ifname%: %local_ip%
+label-disconnected  = ""
+format-padding      = 1
+
 
 [module/pulseaudio]
 type = internal/pulseaudio
 label-volume             =   %percentage%%
 ;label-volume-background = ${colors.blue}
 ;label-volume-foreground = ${colors.foreground}
-label-volume-padding     = 2
+label-volume-padding     = 1
 label-muted              =  Muted
 ;label-muted-background  = ${colors.red}
 ;label-muted-foreground  = ${colors.foreground}
-label-muted-padding      = 2
+label-muted-padding      = 1
 
 [module/temperature]
 type 		          = internal/temperature
-hwmon-path            = /sys/class/hwmon/hwmon0/temp1_input
+hwmon-path            = /sys/class/hwmon/hwmon1/temp1_input
+base-temperature      = 20
+warn-temperature      = 60
 label                 =  %temperature-c% 
-label-background      = ${colors.purple}
+label-background      = ${colors.background}
 label-foreground      = ${colors.foreground}
-label-padding         = 2
+label-padding         = 1
 label-warn            =  %temperature-c% 
 label-warn-background = ${colors.red}
 label-warn-foreground = ${colors.foreground}
-label-warn-padding    = 2
+label-warn-padding    = 1
 
 [settings]
 screenchange-reload     = true

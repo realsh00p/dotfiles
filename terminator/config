@@ -1,17 +1,16 @@
 [global_config]
+  geometry_hinting = True
   suppress_multiple_term_dialog = True
 [keybindings]
-  split_horiz = <Primary><Shift>o
-  split_vert = <Primary><Shift>e
+  split_horiz = ""
+  split_vert = ""
   paste = <Primary><Shift>v
 [profiles]
   [[default]]
-    allow_bold = False
     background_color = "#282828"
-    background_darkness = 0.93
+    background_darkness = 0.95
     background_type = transparent
-    cursor_color = "#ebdbb2"
-    font = CaskaydiaCove Nerd Font 12
+    font = Inconsolata Medium 12
     foreground_color = "#ebdbb2"
     show_titlebar = False
     scrollbar_position = hidden
@@ -21,6 +20,7 @@
     use_custom_command = True
     custom_command = /usr/bin/fish
     use_system_font = False
+    use_theme_colors = True
 [layouts]
   [[default]]
     [[[window0]]]

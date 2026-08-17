@@ -1,5 +1,6 @@
 set fish_greeting
 
+# WFH
 set -U fish_color_normal normal
 set -U fish_color_command 99cc99
 set -U fish_color_quote ffcc66
@@ -25,7 +26,6 @@ set -U fish_pager_color_completion normal
 set -U fish_pager_color_description B3A06D yellow
 set -U fish_pager_color_prefix normal --bold --underline
 set -U fish_pager_color_progress brwhite --background=cyan
-
 
 # set -xg fish_color_autosuggestion '555'  'yellow'
 # set -xg fish_color_cancel -r
@@ -55,7 +55,9 @@ set -U fish_pager_color_progress brwhite --background=cyan
 # set -xg fish_pager_color_prefix cyan
 # set -xg fish_pager_color_progress cyan
 
-theme_gruvbox dark medium
+#theme_gruvbox light medium
+#theme_gruvbox light soft
+theme_gruvbox dark soft
 
 if test -d ~/bin
    set -gx PATH ~/bin $PATH 
